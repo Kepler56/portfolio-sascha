@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>saschacauchon</title>
+        <link rel="icon" type="image/png" href="./images/logo.png">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+        <!-- Link to CSS style sheet -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/mediaqueries.css">
+
+        <!-- Link to Font Awesome CDN --> 
+        <script src="https://kit.fontawesome.com/136cda2572.js" crossorigin="anonymous"></script>
+
+        <!-- Link to javascript file -->
+        <script src="./javascript/script.js"></script>
+    </head>
+    <body>
+        <!-- Side navigation code -->
+        <nav id="navbar">
+            <ul class="my-navbar-nav">
+
+                <li class="my-nav-item">
+                    <a href="#landing-section" class="my-nav-link">
+                        <img src="./images/logo.png" alt="logo" class="logo">
+                    </a>
+                </li>
+
+                <li class="my-nav-item">
+                    <a href="#about-me" class="my-nav-link">
+                        <span class="link-text">About Me</span>
+                    </a>
+                </li>
+
+                <li class="my-nav-item">
+                    <a href="#my-skills" class="my-nav-link">
+                        <span class="link-text">My Skills</span>
+                    </a>
+                </li>
+
+                <li class="my-nav-item">
+                    <a href="#projects" class="my-nav-link">
+                        <span class="link-text">Projects</span>
+                    </a>
+                </li>
+
+                <li class="my-nav-item">
+                    <a href="#contact-me" class="my-nav-link">
+                        <span class="link-text">Contact Me</span>
+                    </a>
+                </li>
+
+                <li class="my-nav-item">
+                    <div id="links">
+                        <a href="https://github.com/Kepler56?tab=repositories" aria-label="GitHub" class="my-nav-icons"><i class="fa-brands fa-square-github fa-3x"></i></a> 
+                        <a href="https://www.linkedin.com/in/scauchon/" aria-label="Linkedin" class="my-nav-icons"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>  
+
+        <!-- Mobile navigation menu -->
+        <nav id="hamburger-nav">
+            <div class="container">
+                <div class="row">
+                    <a href="#landing-section" class="my-nav-link">
+                        <img src="./images/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li class="my-nav-item" onclick="toggleMenu()">
+                        <a href="#about-me" class="my-nav-link">
+                            <span class="link-text">About Me</span>
+                        </a>
+                    </li>
+    
+                    <li class="my-nav-item" onclick="toggleMenu()">
+                        <a href="#my-skills" class="my-nav-link">
+                            <span class="link-text">My Skills</span>
+                        </a>
+                    </li>
+    
+                    <li class="my-nav-item" onclick="toggleMenu()">
+                        <a href="#projects" class="my-nav-link">
+                            <span class="link-text">Projects</span>
+                        </a>
+                    </li>
+    
+                    <li class="my-nav-item" onclick="toggleMenu()">
+                        <a href="#contact-me" class="my-nav-link">
+                            <span class="link-text">Contact Me</span>
+                        </a>
+                    </li>
+    
+                    <li class="my-nav-item" onclick="toggleMenu()">
+                        <div id="links">
+                            <a href="https://github.com/Kepler56?tab=repositories" aria-label="GitHub" class="my-nav-icons"><i class="fa-brands fa-square-github fa-3x"></i></a> 
+                            <a href="https://www.linkedin.com/in/scauchon/" aria-label="Linkedin" class="my-nav-icons"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav>  
+
+
+        <main>
+            <!-- Landing section code -->
+            <section id="landing-section">
+                <h1><span class="disappear">Hi there, I'm </span><span class="change-color">Sascha Cauchon</span></h1>
+                <p>I'm a student @ ESILV, currently pursuing an engineering degree with a major in <span class="change-color">Data & Artificial Intelligence.</span> </p>
+                <button type="submit" onclick="openPDF()" id="download-cv">Download CV</button>
+            </section>
+
+            <!-- About me section code -->
+            <section id="about-me">
+                <h2>about me.</h2>
+                <img src="./images/profile_photo.jpg" alt="profile-picture">
+                <p>
+                    I am a first-year master's student specializing in data and AI, 
+                    driven by a deep passion for exploring the potential of data. 
+                    I embrace the challenge of creating innovative models and methodologies to understand the unknown. 
+                    I believe in the responsible development of AI, ensuring equitable 
+                    access to its benefits. Beyond academics, I find joy in playing 
+                    football with friends and cycling. Currently seeking a 5-month 
+                    internship from April to August 2024, where I can apply and 
+                    expand my knowledge in this transformative field.
+                </p>
+            </section>
+
+            <!-- My skills section code -->
+            <section id="my-skills">
+                <h2>my skills.</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>C#</li>
+                                <li>SQL</li>
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                                <li>R</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h3>Tools & Technologies</h3>
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Pandas, Numpy, Matplotlib, Seaborn</li>
+                                <li>VS Code</li>
+                                <li>Jupyter Notebook</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Teamwork</li>
+                                <li>AGILE</li>
+                                <li>Communication</li>
+                                <li>Problem-solving</li>
+                                <li>Time management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects section code -->
+            <section id="projects">
+                <h2>projects.</h2>
+                <div class="project-container">
+                    <!-- Project 1 -->
+                    <a href="https://github.com/Kepler56/projet-fleurs" class="project-box">
+                        <img src="images/project-fleurs.png" alt="project-1">
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="https://github.com/Kepler56/analyse-valeurs-foncieres" class="project-box">
+                        <img src="images/project-fromage.png" alt="project-2">
+                    </a>
+
+                    <!-- Project 3 -->
+                    <a href="https://github.com/Kepler56/fromage-finder" class="project-box">
+                        <img src="images/project-valeurs-foncieres.png" alt="project-3">
+                    </a>
+
+                    <!-- Project 4 -->
+                    <a href="https://github.com/Kepler56/projet-knn" class="project-box">
+                        <img src="images/project-knn.png" alt="project-4">
+                    </a>
+                </div>
+            </section>
+
+            <!-- Contact me section code -->
+            <section id="contact-me">
+                <h2>contact me.</h2>
+                <div class="container">
+                    <form onsubmit="sendEmail(); reset(); return false">
+                        <h3>Get in touch</h3>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea id="message" cols="30" rows="4" placeholder="Write your message here..."></textarea>
+                        <button type="submit" id="contact-button">Send</button>
+                    </form>
+                </div>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+            </section>
+
+            <!-- Footer code-->
+            <footer>
+                <hr>
+                <p>&copy; 2023 by <span>Sascha Cauchon</span></p>
+            </footer>
+        </main>
+
+    </body>
+</html>

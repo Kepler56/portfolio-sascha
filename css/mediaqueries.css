@@ -1,0 +1,185 @@
+/* Navigation */
+@media screen and (max-width:600px){
+    #navbar{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
+
+/* Navbar, main & section */
+@media screen and (min-width:450px){
+    .disappear{
+        display: inline;
+    }
+
+    #landing-section h1{
+        font-size: 2rem;
+    }
+
+    #landing-section p{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    li{
+        font-size: 1rem;
+    }
+
+    #about-me img{
+        width:250px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:600px){    
+    #hamburger-nav{
+        display: none;
+    }
+
+    #navbar{
+        width:10rem;
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+    }
+    
+    .my-navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-nav-item{
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-nav-link{
+        font-size: 0.8rem;
+    }
+
+    .logo{
+        max-width:80%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .my-nav-icons{
+        font-size: 12px;
+    }
+
+    .my-nav-link:hover{
+        color: var(--text-tertiary);
+        text-decoration: underline;
+    }
+
+    main{
+        margin-left: 10rem;
+        /* width:70%; */
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width:1020px){
+    #hamburger-nav{
+        display: none;
+    }
+    #navbar{
+        width:20rem;
+        height: 100vh;
+        position: fixed;
+        overflow: hidden;
+    }
+    
+    .my-navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-nav-item{
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-nav-link{
+        font-size: 1rem;
+    }
+
+    .my-nav-icons{
+        font-size: 16px;
+    }
+
+    .logo{
+        max-width:60%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .my-nav-link:hover{
+        color: var(--text-tertiary);
+        text-decoration: underline;
+    }
+
+    main{
+        margin-left: 20rem;
+        /* width:70%; */
+        padding: 1rem;
+    }
+
+    .disappear{
+        display: inline;
+    }
+
+    #landing-section h1{
+        font-size: 3rem;
+    }
+
+    #landing-section p{
+        font-size: 2rem;
+    }
+
+    #landing-section button{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    li{
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+/* Project section */
+@media screen and (max-width:950px) {
+    .project-box{
+        width:80%;
+    }
+}
+
+/* Button */
+@media (min-width: 768px) {
+    button {
+        padding: 10px 30px;
+    }
+}
+
