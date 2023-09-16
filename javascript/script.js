@@ -10,7 +10,7 @@ function toggleMenu(){
 
 // Open the PDF URL in a new tab or window
 function openPDF() {
-    window.open('CV/CV.pdf', '_blank');
+    window.open('CV/CV_English.pdf', '_blank');
 }
 
 //Send an email through the contact-me section
