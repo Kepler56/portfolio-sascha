@@ -27,3 +27,20 @@ function sendEmail(){
       message => alert("Message sent succesfully")
     );
 }
+
+// change the styles of just the clicked anchor tag --> not working find solution
+const links = document.querySelectorAll(".navbar a");
+
+for (const link of links) {
+    link.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+
+    // Remove active class 
+    document.querySelector('.active')?.classList.remove('active');
+  
+    // Add active class to clicked link
+    e.currentTarget.classList.add('active');
+  
+}

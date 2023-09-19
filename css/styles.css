@@ -124,6 +124,11 @@ body::-webkit-scrollbar-thumb{
     padding-left: 0.5rem;
 }
 
+.active{
+    color: var(--text-tertiary);
+    text-decoration: underline;
+}
+
 
 /* Styling the sections */
 section{
