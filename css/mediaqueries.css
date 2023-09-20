@@ -84,6 +84,11 @@
         text-decoration: underline;
     }
 
+    .my-nav-icons.active{
+        color: var(--text-tertiary);
+        text-decoration: underline;
+    }
+
     main{
         margin-left: 10rem;
         /* width:70%; */
@@ -129,6 +134,11 @@
     }
 
     .my-nav-link:hover{
+        color: var(--text-tertiary);
+        text-decoration: underline;
+    }
+
+    .my-nav-icons.active{
         color: var(--text-tertiary);
         text-decoration: underline;
     }
@@ -207,6 +217,11 @@
     }
 
     .my-nav-link:hover{
+        color: var(--text-tertiary);
+        text-decoration: underline;
+    }
+
+    .my-nav-icons.active{
         color: var(--text-tertiary);
         text-decoration: underline;
     }
