@@ -107,8 +107,9 @@ body::-webkit-scrollbar-thumb{
     transform: none;
 }
 
+
 .logo{
-    max-width:30%;
+    max-width: 30%;
     height: auto;
     margin: 1rem;
 }
