@@ -19,111 +19,50 @@
 
         <!-- Link to javascript file -->
         <script src="./javascript/script.js"></script>
+        <script src="javascript/nav.js" defer></script>
     </head>
     <body>
-        <!-- Side navigation code -->
-        <nav id="navbar">
-            <ul class="my-navbar-nav">
 
-                <li class="my-nav-item">
-                    <a href="#landing-section" class="my-nav-link">
-                        <img src="./images/logo.png" alt="logo" class="logo">
-                    </a>
-                </li>
-
-                <li class="my-nav-item">
-                    <a href="#about-me" class="my-nav-link">
-                        <span class="link-text">About Me</span>
-                    </a>
-                </li>
-
-                <li class="my-nav-item">
-                    <a href="#my-skills" class="my-nav-link">
-                        <span class="link-text">My Skills</span>
-                    </a>
-                </li>
-
-                <li class="my-nav-item">
-                    <a href="#projects" class="my-nav-link">
-                        <span class="link-text">Projects</span>
-                    </a>
-                </li>
-
-                <li class="my-nav-item">
-                    <a href="#contact-me" class="my-nav-link">
-                        <span class="link-text">Contact Me</span>
-                    </a>
-                </li>
-
-                <li class="my-nav-item">
-                    <div id="links">
-                        <a href="https://github.com/Kepler56?tab=repositories" aria-label="GitHub" class="my-nav-icons"><i class="fa-brands fa-square-github fa-3x"></i></a> 
-                        <a href="https://www.linkedin.com/in/scauchon/" aria-label="Linkedin" class="my-nav-icons"><i class="fa-brands fa-linkedin fa-3x"></i></a>
-                    </div>
-                </li>
-
-            </ul>
-        </nav>  
-
-        <!-- Mobile navigation menu -->
-        <nav id="hamburger-nav">
-            <div class="container">
-                <div class="row">
-                    <a href="#landing-section" class="my-nav-link">
-                        <img src="./images/logo.png" alt="logo" class="logo">
-                    </a>
-                </div>
+        <!-- Navigation Menu -->
+        <header class="primary-header flex" >
+            <div>
+                <img src="./images/logo.png" alt="logo" class="logo">
             </div>
-
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li class="my-nav-item" onclick="toggleMenu()">
-                        <a href="#about-me" class="my-nav-link">
-                            <span class="link-text">About Me</span>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav>
+                <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                    <li>
+                        <a href="#about-me">
+                            <span aria-hidden="true">00</span>About Me
                         </a>
                     </li>
-    
-                    <li class="my-nav-item" onclick="toggleMenu()">
-                        <a href="#my-skills" class="my-nav-link">
-                            <span class="link-text">My Skills</span>
+                    <li>
+                        <a href="#my-skills">
+                            <span aria-hidden="true">01</span>My Skills
                         </a>
                     </li>
-    
-                    <li class="my-nav-item" onclick="toggleMenu()">
-                        <a href="#projects" class="my-nav-link">
-                            <span class="link-text">Projects</span>
+                    <li>
+                        <a href="#projects">
+                            <span aria-hidden="true">02</span>Projects
                         </a>
                     </li>
-    
-                    <li class="my-nav-item" onclick="toggleMenu()">
-                        <a href="#contact-me" class="my-nav-link">
-                            <span class="link-text">Contact Me</span>
+                    <li>
+                        <a href="#contact-me">
+                            <span aria-hidden="true">03</span>Contact Me
                         </a>
                     </li>
-    
-                    <li class="my-nav-item" onclick="toggleMenu()">
-                        <div id="links">
-                            <a href="https://github.com/Kepler56?tab=repositories" aria-label="GitHub" class="my-nav-icons"><i class="fa-brands fa-square-github fa-3x"></i></a> 
-                            <a href="https://www.linkedin.com/in/scauchon/" aria-label="Linkedin" class="my-nav-icons"><i class="fa-brands fa-linkedin fa-3x"></i></a>
-                        </div>
-                    </li>
-                </div>
-            </div>
-        </nav>  
-
-
+                </ul>
+            </nav>
+        </header>
 
         <main>
             <!-- Landing section code -->
             <section id="landing-section">
                 <h1><span class="disappear">Hi there, I'm </span><span class="change-color">Sascha Cauchon</span></h1>
                 <p>I'm a student @ ESILV, currently pursuing an engineering degree with a major in <span class="change-color">Data & Artificial Intelligence.</span> </p>
-                <button type="submit" onclick="openPDF()" id="download-cv">Download CV</button>
+                <button type="submit" onclick="openPDF_EN()" id="download-cv">Download CV</button>
             </section>
 
             <!-- About me section code -->
@@ -337,8 +276,14 @@
                 </div>
             </section>
 
-            <!-- Contact me section code -->
+            <!-- Contact me section code -- to change -->
             <section id="contact-me">
+                <!-- <li class="my-nav-item">
+                    <div id="links">
+                        <a href="https://github.com/Kepler56?tab=repositories" aria-label="GitHub" class="my-nav-icons"><i class="fa-brands fa-square-github fa-3x"></i></a> 
+                        <a href="https://www.linkedin.com/in/scauchon/" aria-label="Linkedin" class="my-nav-icons"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+                    </div>
+                </li> -->
                 <h2>contact me.</h2>
                 <div class="container">
                     <form onsubmit="sendEmail(); reset(); return false">
