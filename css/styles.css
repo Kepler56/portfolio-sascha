@@ -239,6 +239,7 @@ footer span{
 /* Styling the button */
 button{
   background-color: var(--text-secondary);
+  margin-right:10px;
   border: 1px solid var(--text-secondary);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
