@@ -195,7 +195,34 @@ li{
 
 /* Styling the contact page */
 
-.container{
+
+.contact-info-upper-container{
+    display:flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: var(--text-secondary) solid 1px;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+i{
+    color: var(--text-secondary);
+}
+
+.contact-info-container a{
+    font-size: larger;
+    color:var(--text-primary);
+}
+
+/* .container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,7 +247,7 @@ form input, form textarea{
     padding: 20px;
     outline: none;    
     background-color: #f5f5f5;
-}
+} */
 
 /* Styling the footer */
 
